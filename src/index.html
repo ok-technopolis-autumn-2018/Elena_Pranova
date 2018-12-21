@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo MVC</title>
-    <link href="styles/default.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 
@@ -21,7 +21,7 @@
 
 
     <div class="todo-list">
-        <div class="todo-list_item">
+        <div class="todo-list_item __not-active" >
                 <div class="custom-checkbox todo-list_item_ready-marker">
                     <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
                     <div class="custom-checkbox_visual">
@@ -40,7 +40,7 @@
         </div>
 
 
-        <div class="todo-list_item">
+        <div class="todo-list_item __not-active">
             <div class="custom-checkbox todo-list_item_ready-marker">
                 <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
                 <div class="custom-checkbox_visual">
@@ -59,9 +59,9 @@
         </div>
 
 
-        <div class="todo-list_item">
+        <div class="todo-list_item __not-active">
             <div class="custom-checkbox todo-list_item_ready-marker">
-                <input type="checkbox" checked class="custom-checkbox_target" aria-label="Mark todo as ready"/>
+                <input type="checkbox"  class="custom-checkbox_target" aria-label="Mark todo as ready"/>
                 <div class="custom-checkbox_visual">
                     <div class="custom-checkbox_visual-icon">
                     </div>
@@ -77,7 +77,7 @@
 
         </div>
 
-        <div class="todo-list_item">
+        <div class="todo-list_item __not-active">
             <div class="custom-checkbox todo-list_item_ready-marker">
                 <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
                 <div class="custom-checkbox_visual">
@@ -102,9 +102,9 @@
 
         <button class="todo-toolbar_clear-completed">Clear completed</button>
         <div class="todo-toolbar_filters">
-            <button class="todo-toolbar_filter_selected" aria-label="Filter: All is selected">All</button>
-            <button class="todo-toolbar_filter" aria-label="Filter: Active is not selected">Active</button>
-            <button class="todo-toolbar_filter" aria-label="Filter: Completed is not selected">Completed</button>
+            <button class="todo-toolbar_filter __All __selected" aria-label="Filter: All is selected">All</button>
+            <button class="todo-toolbar_filter __Active" aria-label="Filter: Active is not selected">Active</button>
+            <button class="todo-toolbar_filter __Completed" aria-label="Filter: Completed is not selected">Completed</button>
 
         </div>
     </div>
