@@ -10,10 +10,18 @@
 
 
      }
-         .todo-list_item:after{
+
+     .todo-list_item.__not-active{
+        display: none;
+        content: '';
+
+     }
+
+        .todo-list_item:before,
+        .todo-list_item:after{
              content: '';
-             clear both;
-             display: table;
+             clear: both;
+             display: block;
          }
          .todo-list_item_ready-marker{
              float: left;

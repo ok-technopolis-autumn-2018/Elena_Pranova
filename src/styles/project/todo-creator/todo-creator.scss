@@ -1,10 +1,10 @@
 .todo-creator {
 padding: 16px 16px;
 
-           /*background: #f00;*/
-       }
 
-.todo-creator: after {
+}
+
+.todo-creator:after {
     content: '';
     display: table;
     clear: both;
